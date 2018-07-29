@@ -15,5 +15,5 @@ Installing :
    users as innser No-SQL dataforms 
 
 Execution :
-4) Run the mongo db server.
-5) Run the server.js file.
+1) Run the mongo db server.
+2) Run the server.js file.
