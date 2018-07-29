@@ -1,0 +1,38 @@
+<div class="container">
+		    <h2>Feedback Form to {{sendEmail}}</h2>    <h3><a href="#/logout">logout</a> </h3>
+		<div class="form-group">
+		  	<div class="well well-sm">
+		  		<label for="communication">communication</label></br>
+		  	<label class="radio-inline"><input type="radio" name="optradio" ng-model="contact.commun" value="bad">bad</label>
+			<label class="radio-inline"><input type="radio" name="optradio" ng-model="contact.commun" value="good">good</label>
+			<label class="radio-inline"><input type="radio" name="optradio" ng-model="contact.commun" value="better">better</label>
+			</div>
+			<div class="well well-sm">
+		  		<label for="communication">Behaviour</label></br>
+		  	<label class="radio-inline"><input type="radio" name="behaviour" ng-model="contact.behave" value="bad">bad</label>
+			<label class="radio-inline"><input type="radio" name="behaviour" ng-model="contact.behave" value="good">good</label>
+			<label class="radio-inline"><input type="radio" name="behaviour"  ng-model="contact.behave" value="better">better</label>
+			</div>
+			<div class="well well-sm">
+		  		<label for="communication">Accountabily</label></br>
+		  	<label class="radio-inline"><input type="radio" name="account"  ng-model="contact.account" value="bad">bad</label>
+			<label class="radio-inline"><input type="radio" name="account" ng-model="contact.account" value="good">good</label>
+			<label class="radio-inline"><input type="radio" name="account" ng-model="contact.account" value="better">better</label>
+			</div>
+			<div class="well well-sm">
+		  		<label for="communication">Rating on whole</label></br>
+		  	<label class="radio-inline"><input type="radio" name="rating" ng-model="contact.rating" value="1">1</label>
+			<label class="radio-inline"><input type="radio" name="rating" ng-model="contact.rating" value="2">2</label>
+			<label class="radio-inline"><input type="radio" name="rating" ng-model="contact.rating" value="3">3</label>
+			<label class="radio-inline"><input type="radio" name="rating" ng-model="contact.rating" value="4">4</label>
+			<label class="radio-inline"><input type="radio" name="rating" ng-model="contact.rating" value="5">5</label>
+
+			</div>
+			<div class="well well-sm">
+				<label for="comments">comment</label></br>
+				<textarea rows="3" cols="60" ng-model="contact.comment"></textarea>
+			</div>
+			<button type="button" class="btn btn-primary btn-block" ng-click="submit()">Submit</button>
+
+		</div>
+</div>

@@ -1,0 +1,26 @@
+<div class="container">
+		<div class="jumbotron">
+			<h2> welcome to {{currentuser}} </h2>
+		    <h3>List of Employees</h3>   <a href="#/logout">logout</a>
+		</div>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Name </th>
+					<th>Email </th>
+					<th>giveFeedback</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="user in users">
+					<td> {{user.username}} </td>
+					<td> {{user.email}} </td>
+					<td><a href="#/feedback/{{user.email}}">give feedback</a> </td>
+				</tr>
+			</tbody>
+		</table>
+	    <!-- <div class="well well-sm" ng-repeat="user in users">
+	    	{{user.username}} &nbsp; {{user.email}} &nbsp; &nbsp; &nbsp; &nbsp; <a href="#/feedback/{{user.email}}">give feedback</a>
+	    </div> -->
+		
+</div>

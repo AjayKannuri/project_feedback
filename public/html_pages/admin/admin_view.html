@@ -1,0 +1,36 @@
+<div class="container">
+		<div class="jumbotron">
+		    <h1>Admin_view</h1>    <a href="#/admin_logout">logout</a>
+		    
+		</div>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Name </th>
+					<th>Email </th>
+					<th>Password</th>
+					<th>Action </th>
+					<th>&nbsp;</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input type="text" class="form-control" ng-model="user.username"></td>
+					<td><input type="text" class="form-control" ng-model="user.email"></td>
+					<td><input type="text" class="form-control" ng-model="user.password"></td>
+					<td><button class="btn btn-primary" ng-click="addUser()"> Add User</button></td>
+					<td><button class="btn btn-info" ng-click="update()">Update</button> &nbsp;&nbsp;<button class="btn btn-info" ng-click="deSelect()">Clear</button>
+					</td>
+				<tr>
+				</tr>
+				<tr ng-repeat="user in userlist">
+					<td> {{user.username}} </td>
+					<td> {{user.email}} </td>
+					<td> </td>
+					<td><button class="btn btn-danger" ng-click="removeUser(user._id)">remove</button></td>
+					<td><button class="btn btn-warning" ng-click="edit(user._id)">edit</button></td>
+					<td> <a href="#/view_feedback/{{user.email}}"> View Feedback </a> </td>
+				</tr>
+			</tbody>
+		</table>
+</div>

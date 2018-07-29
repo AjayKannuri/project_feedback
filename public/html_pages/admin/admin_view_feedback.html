@@ -1,0 +1,24 @@
+<div class="container">
+		<div class="jumbotron">
+		    <h4>admin_view_feedback of {{id}} </h4>  <a href="#/admin_logout">logout</a>
+		    
+		  </div>
+		  <div ng-show="null_check">
+		  	<p class="text-primary">Sorry no one has given u feedback</p>
+		  </div>
+		  <div ng-show="!null_check">
+		  		<div class="well well-sm" ng-repeat="emp in feedback_list">
+		  			<div> the sender is {{emp.email}} </div>
+		  			<ul>
+		  				<li> communication : {{emp.feedback.commun}}</li>
+		  				<li> behaviour     : {{emp.feedback.behave}}</li>
+		  				<li> Accountability: {{emp.feedback.account}}</li>
+		  				<li> Overall Rating: {{emp.feedback.rating}}</li>
+		  				<li> Personal comment: {{emp.feedback.comment}}</li>
+		  			</ul>
+		  		
+		  		</div>
+		  </div>
+		  
+		
+</div>
